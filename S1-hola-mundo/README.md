@@ -9,7 +9,6 @@ Para esta ocasion se siguieron a detalle las indicaciones dentro del sigueinte m
 
 📁 **Recursos Disponibles:**
 - 📖 [Guía de Instalación Icarus Verilog-MSYS2-VSCode](./Recursos/Guia%20Instalacion%20Icarus%20Verilog-MSYS2-VSCode.pdf)
-- 🖼️ [Evidencia de Ejecución](./Recursos/EvidenciaDeEjecucion.png)
 
 ## Herramientas Utilizadas
 
@@ -20,7 +19,7 @@ Para esta ocasion se siguieron a detalle las indicaciones dentro del sigueinte m
 
 ## Descripción del Diseño
 
-El módulo `hola.v` actúa como un puente simple donde la salida `y` sigue el estado lógico de la entrada `a`. El testbench genera un estímulo que cambia el estado de `a` cada 10ns durante un periodo de 100ns.
+El módulo `hola_mundo.v` actúa como un puente simple donde la salida `y` sigue el estado lógico de la entrada `a`. El testbench genera un estímulo que cambia el estado de `a` cada 10ns durante un periodo de 100ns.
 
 ## Bitácora de Ejecución
 
@@ -38,19 +37,18 @@ El siguiente comando posiciona la terminal en la carpeta de trabajo. En MSYS2, e
 cd '/C/Users/jordy/Documents/ULACIT/I Cuatrimestre/Fundamentos en FDPG/S1-HolaMundo/S1-hola-mundo'
 ```
 
-### Compiar el testbench
+### Compilar el testbench
 
-iverilog es el compilador que transforma tu código de descripción de hardware (Verilog) en un formato que la computadora puede entender para simular.
-
+iverilog es el compilador que transforma el código de descripción de hardware (Verilog) en un formato que la computadora puede entender para simular.
 Va a leer el módulo principal (_hola_mundo_.v) y el test bench (tb_hola_mundo.v) para verificar que no existan errores de sintaxis
-
 Generando asi un archivo binario llamado simulacion.vvp, este es basicamente un archivo de lenguaje ensamblador para la máquina virtual VVP
-
 El cual Contiene:
 
-* La Red de Conexiones (Netlist): Una descripción de cómo se conectan tus cables (wire a, wire y) y módulos (hola, tb_hola_mundo).
-* Instrucciones de Tiempo: Las órdenes que le dicen al simulador que espere 10 ns antes de cambiar una señal (#10 a = ~a).
-* Directivas de Volcado: Las instrucciones para que, al ejecutarse, se cree el archivo de ondas tb_hola_mundo.vcd.
+- La Red de Conexiones (Netlist): Una descripción de cómo se conectan los cables (wire a, wire y) y módulos (hola, tb_hola_mundo).
+
+- Instrucciones de Tiempo: Las órdenes que le dicen al simulador que espere 10 ns antes de cambiar una señal (#10 a = ~a).
+
+- Directivas de Volcado: Las instrucciones para que, al ejecutarse, se cree el archivo de ondas tb_hola_mundo.vcd.
 
 Para esto se ejecuta el siguiente comando:
 
@@ -76,3 +74,11 @@ Una vez en GTKWave, se debe de buscar el nombre del test bench en el panel izqui
 ```bash
 gtkwave tb_hola_mundo.vcd
 ```
+
+### Resultado
+
+Quizas para comprender un poco mejor el resultado, del directorio de Recursos de esta semana, existe un archivo de evidencia.
+
+- 🖼️ [Evidencia de Ejecución](./Recursos/EvidenciaDeEjecucion.png)
+
+---
