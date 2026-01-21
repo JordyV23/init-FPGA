@@ -3,6 +3,14 @@
 **Fecha:** 20 de enero de 2026
 **Objetivo:** Configurar el entorno de simulación y verificar un flujo de diseño básico (Entrada -> Salida).
 
+## Preparacion del Entorno
+
+Para esta ocasion se siguieron a detalle las indicaciones dentro del sigueinte manual.
+
+📁 **Recursos Disponibles:**
+- 📖 [Guía de Instalación Icarus Verilog-MSYS2-VSCode](./Recursos/Guia%20Instalacion%20Icarus%20Verilog-MSYS2-VSCode.pdf)
+- 🖼️ [Evidencia de Ejecución](./Recursos/EvidenciaDeEjecucion.png)
+
 ## Herramientas Utilizadas
 
 * [cite_start]**Editor:** Visual Studio Code[cite: 5, 8].
