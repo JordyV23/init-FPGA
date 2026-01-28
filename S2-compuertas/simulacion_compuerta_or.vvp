@@ -1,0 +1,62 @@
+#! /mingw64/bin/vvp
+:ivl_version "12.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "C:\msys64\mingw64\lib\ivl\system.vpi";
+:vpi_module "C:\msys64\mingw64\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\msys64\mingw64\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\msys64\mingw64\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\msys64\mingw64\lib\ivl\va_math.vpi";
+S_0000028cabcf9770 .scope module, "or_gate_tb" "or_gate_tb" 2 3;
+ .timescale -9 -12;
+v0000028cabca7cb0_0 .var "tb_a", 0 0;
+v0000028cabca7d50_0 .var "tb_b", 0 0;
+v0000028cabcf9a90_0 .net "tb_q", 0 0, L_0000028cabcaaf70;  1 drivers
+S_0000028cabcf9900 .scope module, "uut" "or_gate" 2 13, 3 11 0, S_0000028cabcf9770;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "q";
+L_0000028cabcaaf70 .functor OR 1, v0000028cabca7cb0_0, v0000028cabca7d50_0, C4<0>, C4<0>;
+v0000028cabcc6f90_0 .net "a", 0 0, v0000028cabca7cb0_0;  1 drivers
+v0000028cabcf8c50_0 .net "b", 0 0, v0000028cabca7d50_0;  1 drivers
+v0000028cabcaef10_0 .net "q", 0 0, L_0000028cabcaaf70;  alias, 1 drivers
+    .scope S_0000028cabcf9770;
+T_0 ;
+    %vpi_call 2 21 "$dumpfile", "compuerta_or.vcd" {0 0 0};
+    %vpi_call 2 22 "$dumpvars", 32'sb00000000000000000000000000000000, S_0000028cabcf9770 {0 0 0};
+    %vpi_call 2 24 "$display", "A B | Q" {0 0 0};
+    %vpi_call 2 25 "$display", "-----" {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000028cabca7cb0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000028cabca7d50_0, 0, 1;
+    %delay 10000, 0;
+    %vpi_call 2 30 "$display", "%b %b | %b", v0000028cabca7cb0_0, v0000028cabca7d50_0, v0000028cabcf9a90_0 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000028cabca7cb0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000028cabca7d50_0, 0, 1;
+    %delay 10000, 0;
+    %vpi_call 2 35 "$display", "%b %b | %b", v0000028cabca7cb0_0, v0000028cabca7d50_0, v0000028cabcf9a90_0 {0 0 0};
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000028cabca7cb0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000028cabca7d50_0, 0, 1;
+    %delay 10000, 0;
+    %vpi_call 2 40 "$display", "%b %b | %b", v0000028cabca7cb0_0, v0000028cabca7d50_0, v0000028cabcf9a90_0 {0 0 0};
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000028cabca7cb0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000028cabca7d50_0, 0, 1;
+    %delay 10000, 0;
+    %vpi_call 2 45 "$display", "%b %b | %b", v0000028cabca7cb0_0, v0000028cabca7d50_0, v0000028cabcf9a90_0 {0 0 0};
+    %vpi_call 2 48 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "tb_compuerta_or.v";
+    "compuerta_or.v";
