@@ -1,4 +1,4 @@
-# S2: Compuertas Lógicas
+# S2 - Compuertas Lógicas
 
 ## Objetivo de la Práctica
 Implementar y simular compuertas lógicas básicas utilizando Verilog para entender los fundamentos del diseño digital y la simulación en FPGA.

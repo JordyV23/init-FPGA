@@ -11,6 +11,11 @@ Este repositorio contiene el respaldo de los códigos, simulaciones y aprendizaj
   - Configuración del entorno de desarrollo
   - Sintaxis fundamental de HDL (Hardware Description Language)
 
+### Semana 2: Compuertas Logicas
+
+- **S2-compuertas**: Primer acercamiento de "Compuertas Logicas" en FPGA
+  - Introducción a los compuertas And, OR y XOR
+  
 ## 🛠️ Tecnologías y Herramientas
 
 - **Lenguajes**: Verilog, VHDL
