@@ -31,8 +31,9 @@ Este repositorio contiene el respaldo de los códigos, simulaciones y aprendizaj
 ## 📁 Estructura del Repositorio
 
 ```dir
-├── S1-HolaMundo/          # Semana 1 - Proyecto inicial
-└── S2-Proximamente..../   # Semana 2 - Proximamente....
+├── S1-hola-mundo/         # Semana 1 - Proyecto inicial
+├── S2-compuertas..../     # Semana 2 - Compuertas logicas
+└── S3-Proximamente..../   # Semana 3 - Proximamente....
 ```
 
 ## 🚀 Cómo Empezar
@@ -57,7 +58,8 @@ Este repositorio contiene el respaldo de los códigos, simulaciones y aprendizaj
 | Semana | Tema | Estado | Completado |
 |--------|------|--------|------------|
 | S1 | Hola Mundo | ✅ | 100% |
-| S2 | Proximamente... | ⏳ | 0% |
+| S2 | Compuertas Logicas | ✅ | 100% |
+| S3 | Proximamente... | ⏳ | 0% |
 
 ## 🤝 Contribución
 
